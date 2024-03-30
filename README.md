@@ -6,4 +6,4 @@ Kelas : TI.22.B2
 
 # TUGAS
 
-![image](screenshoot/tugas.JPG)
+![image](Screenshoot/tugas.JPG)
