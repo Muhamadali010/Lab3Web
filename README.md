@@ -53,6 +53,32 @@ Buat folder lab8_php_database pada root directory web server (d:\xampp\htdocs)
 
 Kemudian untuk mengakses direktory tersebut pada web server dengan mengakses URL:
 
-http://localhost/lab8_php_database/
+http://localhost/lab8_php_database/ atau bisa juga dengan akses http://127.0.0.1/lab8_php_database/
 
 ![image](Screenshoot/lab8.JPG)
+
+# Membuat file koneksi database
+
+Buat file baru dengan nama koneksi.php
+
+```py
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "latihan1";
+$conn = mysqli_connect($host, $user, $pass, $db);
+if ($conn == false)
+{
+echo "Koneksi ke server gagal. ";
+die();
+}
+else echo "Koneksi berhasil";
+?>
+```
+
+Buka melalui browser untuk menguji koneksi database (untuk menyampilkan pesan koneksi berhasil,
+
+uncomment pada perintah echo “koneksi berhasil”;
+
+![image](Screenshoot/koneksiphp.JPG)
